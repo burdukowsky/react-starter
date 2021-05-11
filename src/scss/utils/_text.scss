@@ -1,0 +1,25 @@
+$aligns: justify, left, right, center;
+
+@each $align in $aligns {
+  .text-#{$align} {
+    text-align: $align !important;
+  }
+}
+
+$transforms: lowercase, uppercase, capitalize;
+
+@each $transform in $transforms {
+  .text-#{$transform} {
+    text-transform: $transform !important;
+  }
+}
+
+.text-transform-none {
+  text-transform: none !important;
+}
+
+@each $color, $value in $theme-colors {
+  .text-#{$color} {
+    color: #{$value} !important;
+  }
+}
