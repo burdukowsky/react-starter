@@ -7,6 +7,7 @@
 * Добавлен `.env` (указан порт для dev-server)
 * Добавлен `.editorconfig`
 * SCSS (Dart Sass)
+* Строгий ESLint (`eslintConfig` перенесен из `package.json` в `.eslintrc.json`)
 
 ## Available Scripts
 

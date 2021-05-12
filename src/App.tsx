@@ -2,9 +2,9 @@ import React from 'react';
 import './App.css';
 import Demo from './features/demo/Demo';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <Demo/>
+    <Demo />
   );
 }
 
