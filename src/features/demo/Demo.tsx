@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
-export default function Demo(props: RouteComponentProps): JSX.Element {
+export const Demo: React.FC<RouteComponentProps> = () => {
   return (
     <React.Fragment>
       <div className='text-primary'>primary</div>
@@ -11,4 +11,4 @@ export default function Demo(props: RouteComponentProps): JSX.Element {
       <div className='text-muted'>muted</div>
     </React.Fragment>
   );
-}
+};

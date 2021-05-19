@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+
 import './scss/styles.scss';
 import App from './App';
 import { store } from './app/store';
-import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { ProvideAuth } from './app/hooks/useAuth';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ProvideAuth>
+        <App />
+      </ProvideAuth>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,22 +1,16 @@
 import React from 'react';
-import { Router } from '@reach/router';
-import './App.css';
-import Demo from './features/demo/Demo';
-import Menu from './features/menu/Menu';
-import Home from './features/home/Home';
-import NotFound from './features/not-found/NotFound';
 
-function App(): JSX.Element {
-  return (
-    <React.Fragment>
-      <Menu />
-      <Router>
-        <Home path='/' />
-        <Demo path='demo' />
-        <NotFound default />
-      </Router>
-    </React.Fragment>
-  );
-}
+import './App.css';
+import useAuth from './app/hooks/useAuth';
+import { MainLayout } from './app/layouts/MainLayout';
+import { LoginLayout } from './app/layouts/LoginLayout';
+
+const App: React.FC = () => {
+  const auth = useAuth();
+
+  return auth.user
+    ? <MainLayout />
+    : <LoginLayout />;
+};
 
 export default App;
