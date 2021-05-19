@@ -1,0 +1,17 @@
+.navLink {
+  display: inline-block;
+  padding: 5px;
+  background-color: lightgray;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: white;
+    text-decoration: none;
+  }
+
+  &.navLinkActive {
+    background-color: cornflowerblue;
+  }
+}

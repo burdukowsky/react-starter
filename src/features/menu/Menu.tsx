@@ -1,10 +1,10 @@
-import { Link } from '@reach/router';
+import NavLink from './nav-link/NavLink';
 
 export default function Menu(): JSX.Element {
   return (
     <nav>
-      <Link to='/'>Home</Link>
-      <Link to='demo'>Dashboard</Link>
+      <NavLink to='/'>Home</NavLink>
+      <NavLink to='demo'>Dashboard</NavLink>
     </nav>
   );
 }
