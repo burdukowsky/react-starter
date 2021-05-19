@@ -1,6 +1,7 @@
 import React from 'react';
+import { RouteComponentProps } from '@reach/router';
 
-export default function Demo(): JSX.Element {
+export default function Demo(props: RouteComponentProps): JSX.Element {
   return (
     <React.Fragment>
       <div className='text-primary'>primary</div>
