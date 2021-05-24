@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { NavLink } from './nav-link/NavLink';
-import useAuth from '../../app/hooks/useAuth'; // todo: сокращение
+import useAuth from 'app/hooks/useAuth';
 
 export const Menu: React.FC = () => {
   const auth = useAuth();

@@ -1,7 +1,7 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
-import useAuth from '../../app/hooks/useAuth'; // todo: сокращение
+import useAuth from 'app/hooks/useAuth';
 
 export const Login: React.FC<RouteComponentProps> = () => {
 

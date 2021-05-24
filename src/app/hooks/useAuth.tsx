@@ -1,7 +1,7 @@
 import React, { createContext, useContext } from 'react';
 
 import { useLocalStorage } from './useLocalStorage';
-import { LS_USER } from '../globals/ls-keys';
+import { LS_USER } from 'app/globals/ls-keys';
 
 interface AuthContextValue {
   user: User | null;
