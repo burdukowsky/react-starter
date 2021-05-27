@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 
 import './App.css';
 import useAuth from './app/hooks/useAuth';
-import { MainLayout } from './app/layouts/MainLayout';
-import { LoginLayout } from './app/layouts/LoginLayout';
+import { Loader } from './app/components/loader/Loader';
+
+const MainLayout = React.lazy(() => import('./app/layouts/MainLayout'));
+const LoginLayout = React.lazy(() => import('./app/layouts/LoginLayout'));
 
 const App: React.FC = () => {
   const auth = useAuth();
 
-  return auth.user
-    ? <MainLayout />
-    : <LoginLayout />;
+  return (
+    <Suspense fallback={<Loader />}>
+      {
+        auth.user
+          ? <MainLayout />
+          : <LoginLayout />
+      }
+    </Suspense>
+  );
 };
 
 export default App;

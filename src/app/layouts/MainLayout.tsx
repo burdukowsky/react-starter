@@ -6,7 +6,7 @@ import { Home } from 'features/home/Home';
 import { Demo } from 'features/demo/Demo';
 import { NotFound } from 'features/not-found/NotFound';
 
-export const MainLayout: React.FC = () => {
+const MainLayout: React.FC = () => {
   return (
     <React.Fragment>
       <Menu />
@@ -18,3 +18,5 @@ export const MainLayout: React.FC = () => {
     </React.Fragment>
   );
 };
+
+export default MainLayout;

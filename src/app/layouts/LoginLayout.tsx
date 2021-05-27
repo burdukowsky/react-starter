@@ -3,10 +3,12 @@ import React from 'react';
 
 import { Login } from 'features/login/Login';
 
-export const LoginLayout: React.FC = () => {
+const LoginLayout: React.FC = () => {
   return (
     <Router>
       <Login default />
     </Router>
   );
 };
+
+export default LoginLayout;
