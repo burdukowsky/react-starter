@@ -15,6 +15,8 @@
 * `hooks.ts` переименован в `reduxHooks.ts`
 * Добавлены хуки `useAuth` и `useLocalStorage` (`src/app/hooks`)
 * Добавлена директория с типами (`types`)
+* Абсолютные импорты
+* Ленивая загрузка модулей (`MainLayout` и `LoginLayout`)
 
 ## Available Scripts
 
