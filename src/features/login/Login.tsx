@@ -1,11 +1,13 @@
 import React from 'react';
 import { RouteComponentProps } from '@reach/router';
+import { useTranslation } from 'react-i18next';
 
 import useAuth from 'app/hooks/useAuth';
 
 export const Login: React.FC<RouteComponentProps> = () => {
 
   const auth = useAuth();
+  const { t } = useTranslation('common');
 
   function authorize(event: React.SyntheticEvent): void {
     event.preventDefault();
@@ -13,7 +15,7 @@ export const Login: React.FC<RouteComponentProps> = () => {
     auth.signIn('stub', 'stub')
       .catch((e) => {
         // eslint-disable-next-line no-alert
-        alert('Ошибка авторизации');
+        alert(t('requestFailed'));
         console.error(e);
       });
   }
@@ -22,7 +24,7 @@ export const Login: React.FC<RouteComponentProps> = () => {
     <form onSubmit={authorize}>
       <input type='text' />
       <input type='password' />
-      <button type='submit'>Войти</button>
+      <button type='submit'>{t('signIn')}</button>
     </form>
   );
 

@@ -1,25 +1,27 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { NavLink } from './nav-link/NavLink';
 import useAuth from 'app/hooks/useAuth';
 
 export const Menu: React.FC = () => {
   const auth = useAuth();
+  const { t } = useTranslation('common');
 
   function signOut(): void {
     // eslint-disable-next-line no-restricted-globals,no-alert
-    if (confirm('Выйти?')) {
+    if (confirm(t('signOutConfirm'))) {
       auth.signOut()
         // eslint-disable-next-line no-alert
-        .catch(() => alert('Ошибка запроса'));
+        .catch(() => alert(t('requestFailed')));
     }
   }
 
   return (
     <nav>
-      <NavLink to='/'>Home</NavLink>
-      <NavLink to='demo'>Dashboard</NavLink>
-      <button type='button' onClick={signOut}>Выйти</button>
+      <NavLink to='/'>{t('home')}</NavLink>
+      <NavLink to='demo'>{t('dashboard')}</NavLink>
+      <button type='button' onClick={signOut}>{t('signOut')}</button>
     </nav>
   );
 

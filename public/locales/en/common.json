@@ -1,0 +1,9 @@
+{
+  "home": "Home",
+  "dashboard": "Dashboard",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "signOutConfirm": "Sign out?",
+  "requestFailed": "Request failed",
+  "404": "Page not found"
+}

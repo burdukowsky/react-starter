@@ -17,6 +17,7 @@
 * Добавлена директория с типами (`types`)
 * Абсолютные импорты
 * Ленивая загрузка модулей (`MainLayout` и `LoginLayout`)
+* I18n (`i18next`, `react-i18next`, `i18next-http-backend`)
 
 ## Available Scripts
 
