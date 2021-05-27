@@ -7,7 +7,7 @@ import useAuth from 'app/hooks/useAuth';
 export const Login: React.FC<RouteComponentProps> = () => {
 
   const auth = useAuth();
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   function authorize(event: React.SyntheticEvent): void {
     event.preventDefault();

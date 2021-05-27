@@ -9,6 +9,7 @@ i18n
     fallbackLng: 'ru',
     lng: 'ru',
     ns: ['common', 'home'],
+    defaultNS: 'common',
     interpolation: {
       escapeValue: false
     },

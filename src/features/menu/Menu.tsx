@@ -6,7 +6,7 @@ import useAuth from 'app/hooks/useAuth';
 
 export const Menu: React.FC = () => {
   const auth = useAuth();
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   function signOut(): void {
     // eslint-disable-next-line no-restricted-globals,no-alert
