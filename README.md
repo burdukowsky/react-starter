@@ -18,6 +18,7 @@
 * Абсолютные импорты
 * Ленивая загрузка модулей (`MainLayout` и `LoginLayout`)
 * I18n (`i18next`, `react-i18next`, `i18next-http-backend`)
+* Добавлен файл внешней конфигурации (`public/config.js`)
 
 ## Available Scripts
 
