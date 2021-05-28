@@ -22,6 +22,7 @@ export const Menu: React.FC = () => {
     <nav>
       <NavLink to='/'>{t('home')}</NavLink>
       <NavLink to='demo'>{t('dashboard')}</NavLink>
+      <NavLink to='users'>{t('users')}</NavLink>
       <LangSelector />
       <button type='button' onClick={signOut}>{t('signOut')}</button>
     </nav>

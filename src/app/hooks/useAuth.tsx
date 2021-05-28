@@ -15,7 +15,7 @@ function useProvideAuth(): AuthContextValue {
   const signIn = (email: string, password: string): Promise<User> => {
     return new Promise((resolve) =>
       setTimeout(() => {
-        const userMock: User = { email: 'user@example.com' };
+        const userMock: User = { id: 1, email: 'user@example.com' };
         setUser(userMock);
         resolve(userMock);
       }, 500)

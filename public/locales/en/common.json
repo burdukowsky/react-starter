@@ -1,6 +1,7 @@
 {
   "home": "Home",
   "dashboard": "Dashboard",
+  "users": "Users",
   "signIn": "Sign in",
   "signOut": "Sign out",
   "signOutConfirm": "Sign out?",

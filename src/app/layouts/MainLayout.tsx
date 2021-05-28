@@ -5,6 +5,7 @@ import { Menu } from 'features/menu/Menu';
 import { Home } from 'features/home/Home';
 import { Demo } from 'features/demo/Demo';
 import { NotFound } from 'features/not-found/NotFound';
+import { Users } from 'features/users/Users';
 
 const MainLayout: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const MainLayout: React.FC = () => {
       <Router>
         <Home path='/' />
         <Demo path='demo' />
+        <Users path='users' />
         <NotFound default />
       </Router>
     </React.Fragment>

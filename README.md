@@ -19,6 +19,7 @@
 * Ленивая загрузка модулей (`MainLayout` и `LoginLayout`)
 * I18n (`i18next`, `react-i18next`, `i18next-http-backend`)
 * Добавлен файл внешней конфигурации (`public/config.js`)
+* Подключен [axios](https://www.npmjs.com/package/axios)
 
 ## Available Scripts
 

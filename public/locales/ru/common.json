@@ -1,6 +1,7 @@
 {
   "home": "Главная",
   "dashboard": "Рабочий стол",
+  "users": "Пользователи",
   "signIn": "Войти",
   "signOut": "Выйти",
   "signOutConfirm": "Выйти?",
