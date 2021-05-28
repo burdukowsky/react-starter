@@ -5,3 +5,4 @@ function key(value: string): string {
 }
 
 export const LS_USER = key('user');
+export const LS_LANG = key('lang');
