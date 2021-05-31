@@ -2,10 +2,12 @@ import React from 'react';
 import { RouteComponentProps } from '@reach/router';
 
 import { useAppDispatch, useAppSelector } from 'app/reduxHooks';
-import { fetchUsersAsync, usersSelectors } from './usersSlice';
+import { fetchUsersAsync, selectAllUsers, selectUsersError, selectUsersLoading } from './usersSlice';
 
 export const Users: React.FC<RouteComponentProps> = () => {
-  const users = useAppSelector(usersSelectors.selectAll);
+  const users = useAppSelector(selectAllUsers);
+  const loading = useAppSelector(selectUsersLoading);
+  const error = useAppSelector(selectUsersError);
   const dispatch = useAppDispatch();
 
   function renderUser(user: User): JSX.Element {
@@ -17,9 +19,11 @@ export const Users: React.FC<RouteComponentProps> = () => {
   }
 
   return (
-    <div>
-      <button onClick={fetchUsers}>fetch!</button>
+    <React.Fragment>
+      <button onClick={fetchUsers} disabled={loading}>fetch!</button>
+      {loading && <div>loading...</div>}
+      {error && <div className='text-danger'>error!</div>}
       {users.map(renderUser)}
-    </div>
+    </React.Fragment>
   );
 };
