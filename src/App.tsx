@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 
-import './App.css';
+import './App.less';
 import useAuth from './app/hooks/useAuth';
 import { Loader } from './app/components/loader/Loader';
 

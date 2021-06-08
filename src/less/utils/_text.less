@@ -1,0 +1,25 @@
+@aligns: justify, left, right, center;
+
+each(@aligns, {
+  .text-@{value} {
+    text-align: @value !important;
+  }
+});
+
+@transforms: lowercase, uppercase, capitalize;
+
+each(@transforms {
+  .text-@{value} {
+    text-transform: @value !important;
+  }
+});
+
+.text-transform-none {
+  text-transform: none !important;
+}
+
+each(@theme-colors {
+  .text-@{key} {
+    color: @value !important;
+  }
+});

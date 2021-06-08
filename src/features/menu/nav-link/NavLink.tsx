@@ -2,15 +2,14 @@ import React from 'react';
 import { Link, LinkGetProps, LinkProps } from '@reach/router';
 import classNames from 'classnames/bind';
 
-import styles from './NavLink.module.scss';
-
-const cx = classNames.bind(styles);
+import './NavLink.less';
 
 function isActive({ isCurrent }: LinkGetProps): object {
-  const className = cx({
+  const className = classNames({
     navLink: true,
     navLinkActive: isCurrent
   });
+
   return { className };
 }
 

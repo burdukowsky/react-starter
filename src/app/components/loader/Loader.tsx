@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './Loader.module.scss';
+import './Loader.less';
 
 export const Loader: React.FC = () => {
-  return <div className={styles.loader} />;
+  return <div className='loader' />;
 };
