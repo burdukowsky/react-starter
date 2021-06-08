@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>.a{opacity:0;}</style>
+    </defs>
+    <rect class="a" width="16" height="16"/>
+    <rect width="2" height="2" transform="translate(7 4)"/>
+    <rect width="2" height="5" transform="translate(7 7)"/>
+    <path d="M315-828a7.008,7.008,0,0,1-7-7,7.008,7.008,0,0,1,7-7,7.008,7.008,0,0,1,7,7A7.008,7.008,0,0,1,315-828Zm0-13a6.007,6.007,0,0,0-6,6,6.007,6.007,0,0,0,6,6,6.007,6.007,0,0,0,6-6A6.007,6.007,0,0,0,315-841Z"
+          transform="translate(-307 843)"/>
+</svg>
