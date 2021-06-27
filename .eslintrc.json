@@ -7,7 +7,12 @@
     ],
     "indent": [
       "error",
-      2
+      2,
+      {
+        "ignoredNodes": [
+          "JSXAttribute"
+        ]
+      }
     ],
     "semi": [
       "error",
@@ -32,7 +37,10 @@
     "no-alert": "error",
     "no-eval": "error",
     "no-multi-spaces": "error",
-    "no-redeclare": "error",
+    "no-redeclare": "off",
+    "@typescript-eslint/no-redeclare": [
+      "error"
+    ],
     "yoda": "error",
     "array-bracket-spacing": [
       "error",
@@ -130,6 +138,15 @@
     ],
     "template-curly-spacing": "error",
     "prefer-arrow-callback": "error",
-    "@typescript-eslint/explicit-function-return-type": "error"
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
+    "react/jsx-indent-props": [
+      "error",
+      "first"
+    ]
   }
 }
